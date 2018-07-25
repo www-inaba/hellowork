@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* IE */
+main {
+    display: block;
+}
+
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, p, q, samp,
+small, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+body {
+font-family:'Yu Gothic', "游ゴシック体", "游ゴシック", "Lucida Grande", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+
+
+	font-size: 88%;
+	line-height: 1.5;
+	min-width: 960px;
+	text-align: justify;
+}
+
+main {
+	display: block;
+}
+
+p {
+     margin-bottom: 14px;
+}
+
+p img{
+	padding:0;
+	margin:0;
+}
+
+li {
+    list-style:none;
+}
+
+a.noneOutline {
+    outline:none;
+}
+
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section ,nav{
+	display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+ul {
+	list-style:none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+	quotes:none;
+}
+
+a {
+	text-decoration:none;
+	color:#845b33;
+}
+
+a img {
+	border:none;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+	vertical-align:middle;
+}
+
+/*画像を縦に並べたときに余白が出てしまわないように*/
+img {
+    vertical-align:bottom;
+}
+
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+
